@@ -45,6 +45,8 @@ void enterDeepSleep()
   // Print a message before going to sleep
   Serial.println("Entering deep sleep for " + String(sleepTime) + " seconds...");
   delay(10);
+  digitalWrite(LED_BUILTIN, LOW);
+
   // Configure deep sleep for X seconds (time is in microseconds)
   esp_sleep_enable_timer_wakeup(sleepTime * 1000000);
   delay(50);
@@ -78,7 +80,7 @@ void setup()
 void loop()
 {
   uint32_t deadline;
-
+  digitalWrite(LED_BUILTIN, HIGH);
   loop_SDS();
   float temp(NAN), hum(NAN), pres(NAN);
 
