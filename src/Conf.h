@@ -4,7 +4,7 @@
 
 #include <Arduino.h>
 
-#define sleepTime 120
+#define sleepTime 1*30*60 // 30 min
 
 // Define the appEUI, devEUI, and appSKey as static to limit their linkage to this translation unit
 static const char *appEUI = "0000000000000000";
