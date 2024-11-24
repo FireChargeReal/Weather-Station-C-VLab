@@ -2,9 +2,14 @@
 #ifndef CONF_H
 #define CONF_H
 
+//uncomment when needed
+#define DEBUG 
+
 #include <Arduino.h>
 
 #define sleepTime 1*30*60 // 30 min
+
+#define WDPanicTime 1.5*60 //(1.30 min) Used for watchdog system to prevent loops and crashes
 
 // Define the appEUI, devEUI, and appSKey as static to limit their linkage to this translation unit
 static const char *appEUI = "0000000000000000";
