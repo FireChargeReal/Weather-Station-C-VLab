@@ -19,7 +19,7 @@ cd Weather-Station-C-VLab
 Alternatively, download the repository as a ZIP file from the GitHub page and extract it.
 
 ## 2. Install PlatformIO
-Ensure you have PlatformIO installed. For instructions, visit PlatformIO Installation Guide.
+Ensure you have PlatformIO installed. For instructions, visit [PlatformIO Installation Guide](https://platformio.org/install).
 
 ## 3. Create a TTN Application
 If your haven't created an account on the [The Things Network](https://www.thethingsnetwork.org/) do so.
