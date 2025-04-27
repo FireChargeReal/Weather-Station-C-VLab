@@ -2,7 +2,11 @@
 This repository contains firmware for an ESP32-based weather station that collects and transmits data to TTN. Follow the instructions below to download, configure, and upload the firmware to your ESP32.
 
 Requirements
-Varnalab Weaither station (Wireing guide WIP)<br>
+Varnalab Weaither station (Wiring guide)
+<br>
+![Wiring Guide](Images/WS-C.drawio.png)
+
+<br>
 Visual Studio Code<br>
 PlatformIO (Installed as a VSCode extension or standalone)<br>
 Git (to clone the repository)<br>
@@ -36,6 +40,9 @@ Set the JoinEUI set it to all zeros, this is only done when the device is progra
 
 Finally generate the APPKey and the DevEUI using the genrate button. And create a end device id (device id cannot be changed once set).
 ```
+
+## 3.5 Add the data decoder
+In the application window navigate to "Payload formatters", select uplink and from the drop down select "Custom Javascript formatter" and write over the code with the one from the modded decoder [CayenneModLPP](https://github.com/FireChargeReal/CayenneModLPP/blob/main/JSDecoder.js)
 
 ## 4. Configure the config.h File
 The config.h file is used to set up important parameters like LoRa settings and configurations for sensors and others.
